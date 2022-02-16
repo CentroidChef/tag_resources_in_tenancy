@@ -1,0 +1,13 @@
+
+
+Here is how I ran it for another tenancy. Please note that I was running it at one compartment at time. You take out the compartment and it will run at Tenancy wide. Only one defined tag in the parameter is allowed, hence three statements are required at minimum.
+ 
+Partner.ID:
+python3 tag_resources_in_tenancy.py -cp ocid1.compartment.oc1..XXXXXXXX -tag OPN.PartnerID=47391449 -action add_defined -output list -dt
+ 
+OppurtunityID:
+python3 tag_resources_in_tenancy.py -cp ocid1.compartment.oc1..XXXXXXXX -tag OPN.OpportunityID=A3HPXC -action add_defined -output list -dt
+ 
+Workload:
+python3 tag_resources_in_tenancy.py -cp ocid1.compartment.oc1..XXXXXXXX -tag OPN.Workload="Oracle E-Business Suite to Oracle Cloud" -action add_defined -output list -dt
+ 
